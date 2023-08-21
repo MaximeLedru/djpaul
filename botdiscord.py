@@ -9,12 +9,13 @@ intents.presences = False
 TOKEN = 'MTE0MzI1NjgxNjY0MjQzMzExNA.Gus3GG.0cMXk21St5LATUdrc5n5rCZ3jPg0mS6g_WsylY'  # Remplacez 'YOUR_TOKEN_HERE' par votre propre token bot
 BOT_PREFIX = '/'
 
-bot = commands.Bot(command_prefix=BOT_PREFIX)
+bot = commands.Bot(command_prefix=BOT_PREFIX, intents=intents)
 queue = []
 
 @bot.event
 async def on_ready():
     print(f'Logged in as {bot.user.name}')
+
 
 @bot.command()
 async def play(ctx, *, query):
