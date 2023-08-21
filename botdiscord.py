@@ -2,6 +2,10 @@ import discord
 from discord.ext import commands
 import youtube_dl
 
+intents = discord.Intents.default()
+intents.typing = False
+intents.presences = False
+
 TOKEN = 'MTE0MzI1NjgxNjY0MjQzMzExNA.Gus3GG.0cMXk21St5LATUdrc5n5rCZ3jPg0mS6g_WsylY'  # Remplacez 'YOUR_TOKEN_HERE' par votre propre token bot
 BOT_PREFIX = '/'
 
